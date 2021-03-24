@@ -9,6 +9,7 @@ bool areBracketsBalanced(string expr)
  
     for (int i = 0; i < expr.length() - 1; i++)
     {
+	int j = 0;
 	if (expr[i] == '(')
 	{
 		s.push(expr[i]);
@@ -20,7 +21,10 @@ bool areBracketsBalanced(string expr)
 	{
 		s.push(expr[i]);
 	}
- 
+ 	// else {
+	// return false;
+	// }
+	    
 	if(expr[i] = ')') 
 	{
 	  char x = s.top();
